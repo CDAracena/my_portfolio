@@ -664,3 +664,9 @@ iframe {
 .profile-image {
   border-radius: 15%;
 }
+
+.redbull-img {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}

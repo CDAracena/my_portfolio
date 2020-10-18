@@ -22,7 +22,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Christian D Aracena">
-  <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+  <meta name="author" content="Christian D Aracena">
   <link rel="icon" href="assets/images/develop.png">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -50,21 +50,21 @@
 
 <body>
   <!-- ******HEADER****** -->
-  <header class="header">
+  <header class="header" itemscope itemtype="http://schema.org/Person">
     <div class="container">
       <img class="profile-image img-responsive pull-left" src="assets/images/githubProfile.png" width="200px" alt="Christian D. Aracena" />
       <div class="profile-content pull-left">
-        <h1 class="name">Christian D. Aracena</h1>
-        <h2 class="desc">Full-Stack Developer</h2>
+        <h1 class="name" itemprop="name">Christian D. Aracena</h1>
+        <h2 class="desc" itemprop="jobTitle">Full-Stack Developer</h2>
         <ul class="social list-inline">
 
-          <li><a href="https://www.linkedin.com/in/christian-aracena-273b40b0/"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/CDAracena"><i class="fa fa-github-alt"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/christian-aracena-273b40b0/" itemprop="url" class="actionEl" data-value="linkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/CDAracena" itemprop="url" class="actionEl" data-value="github" target="_blank"><i class="fa fa-github-alt"></i></a></li>
 
         </ul>
       </div>
       <!--//profile-->
-      <a class="btn btn-cta-primary pull-right" href="mailto:cdaracena@gmail.com" target="_self"><i class="fa fa-paper-plane"></i> Contact Me</a>
+      <a class="btn btn-cta-primary pull-right actionEl" href="mailto:cdaracena@gmail.com" target="_self" itemprop="email" data-value="contactMe"><i class="fa fa-paper-plane"></i> Contact Me</a>
     </div>
     <!--//container-->
   </header>
@@ -73,10 +73,10 @@
   <div class="container sections-wrapper">
     <div class="row">
       <div class="primary col-md-8 col-sm-12 col-xs-12">
-        <section class="about section">
+        <section class="about section" itemscope itemtype="http://schema.org/Person">
           <div class="section-inner">
             <h2 class="heading">About Me</h2>
-            <div class="content">
+            <div class="content" itemprop="description">
               <p>Hello there! Thanks for stopping by! My name is Christian D. Aracena and I am a full-stack developer living in New York City. I enjoy all things related to tech and working with others in fun and productive projects.</p>
 
               <p>I really enjoy coding, learning new technologies and improving on previously acquired skills. I'm also an avid gym goer, who likes to spend his time on the weekends with a good read. My favorite video game of all time is Shenmue and
@@ -96,10 +96,10 @@
             <h2 class="heading">Latest Projects</h2>
             <div class="content">
               <div class="item featured text-center">
-                <h3 class="title"><a href="https://im-bored.surge.sh/" target="_blank">Im Bored</a></h3>
+                <h3 class="title"><a href="https://im-bored.surge.sh/" target="_blank" class="actionEl" data-value="imBored">Im Bored</a></h3>
                 <p class="summary">Responsive React-Material UI app for curing boredom!</p>
                 <div class="featured-image">
-                  <a href="https://im-bored.surge.sh/" target="_blank">
+                  <a href="https://im-bored.surge.sh/" target="_blank" class="actionEl" data-value="imBored">
                     <img class="img-responsive project-image" src="assets/images/im_bored.png" alt="Im Bored" />
                   </a>
                   <div class="ribbon">
@@ -114,93 +114,93 @@
                   <p>Stay tuned for future improvements</p>
                 </div>
                 <!--//desc-->
-                <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/Im-Bored" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/Im-Bored" target="_blank" data-value="imBoredGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
               </div>
               <!--//item-->
               <hr class="divider" />
 
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://snack.expo.io/@cdaracena/redbull_apparel_react_native_no_hooks_version" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://snack.expo.io/@cdaracena/redbull_apparel_react_native_no_hooks_version" target="_blank" data-value="redBull">
                   <img class="img-responsive project-image redbull-img" src="assets/images/redbull_native.png" alt="Red Bull"/>
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://snack.expo.io/@cdaracena/redbull_apparel_react_native_no_hooks_version" target="_blank">Red Bull Apparel - View Red Bull's recent inventory!</a></h3>
+                  <h3 class="title"><a href="https://snack.expo.io/@cdaracena/redbull_apparel_react_native_no_hooks_version" target="_blank" class="actionEl" data-value="redBull">Red Bull Apparel - View Red Bull's recent inventory!</a></h3>
                   <p>React Native application built for Android OS - Renders Red Bull's recent apparel inventory, allows users to search and view individual product pages. Individual product pages contain product variants</p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/RedBull_Apparel_React_Native" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/RedBull_Apparel_React_Native" target="_blank" data-value="redBullGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
 
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://photocatcher.herokuapp.com/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://photocatcher.herokuapp.com/" target="_blank" data-value="photoCatcher">
                   <img class="img-responsive project-image" src="assets/images/PhotoCatcher.png" alt="Photo Catcher" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://photocatcher.herokuapp.com/" target="_blank">Photo Catcher - Build Your Dream Gallery!</a></h3>
+                  <h3 class="title"><a href="https://photocatcher.herokuapp.com/" target="_blank" class="actionEl" data-value="photoCatcher">Photo Catcher - Build Your Dream Gallery!</a></h3>
                   <p>A full-stack gallery app built with HTML, Bulma CSS, Ruby on Rails. Users can create, edit, delete photos, accounts and view galleries.</p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/photo_catcher" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/photo_catcher" target="_blank" data-value="photoCatcherGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
               </div>
 
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://cdaracena.github.io/VisitQuisqueya/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://cdaracena.github.io/VisitQuisqueya/" target="_blank" data-value="visitQuisqueya">
                   <img class="img-responsive project-image" src="assets/images/visit_quisqueya.png" alt="Visit Quisqueya" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://cdaracena.github.io/VisitQuisqueya/" target="_blank">Visit Quisqueya - Travel to the Dominican Republic</a></h3>
+                  <h3 class="title"><a href="https://cdaracena.github.io/VisitQuisqueya/" target="_blank" class="actionEl" data-value="visitQuisqueya">Visit Quisqueya - Travel to the Dominican Republic</a></h3>
                   <p>Example webpage for people that wish to visit the Dominican Republic. Pick from 3 provinces (Santiago, Santo Domingo, Punta Cana) and book your trip today! See the current weather and learn about the Dominican Republic's
                     history.</p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/VisitQuisqueya" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/VisitQuisqueya" target="_blank" data-value="visitQuisqueyaGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://cdaracena.github.io/barrel_apprenticeship/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://cdaracena.github.io/barrel_apprenticeship/" target="_blank" data-value="knobCreek">
                   <img class="img-responsive project-image" src="assets/images/knob_creek.png" alt="Knob Creek" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://cdaracena.github.io/barrel_apprenticeship/" target="_blank">Knob Creek Mock-Up - Responsive Knob Creek Index Page Mock-Up </a></h3>
+                  <h3 class="title"><a href="https://cdaracena.github.io/barrel_apprenticeship/" target="_blank" class="actionEl" data-value="knobCreek">Knob Creek Mock-Up - Responsive Knob Creek Index Page Mock-Up </a></h3>
                   <p> A mock-up of the Knob Creek index page built with only HTML and CSS. Responsive breakpoints at 1440px, 1000px, 600px, 400px and 320px.
                   </p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/barrel_apprenticeship" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/barrel_apprenticeship" target="_blank" data-value="knobCreekGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://precolumbusfinder.herokuapp.com/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://precolumbusfinder.herokuapp.com/" target="_blank" data-value="preColumbus">
                   <img class="img-responsive project-image" src="assets/images/PreColumbusFinder.png" alt="Pre Columbus Finder" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://precolumbusfinder.herokuapp.com/" target="_blank">Pre-Columbus Finder, A Blast To The Past </a></h3>
+                  <h3 class="title"><a href="https://precolumbusfinder.herokuapp.com/" target="_blank" class="actionEl" data-value="preColumbus">Pre-Columbus Finder, A Blast To The Past </a></h3>
                   <p> A full-stack gallery app built with HTML, Bulma CSS, Ruby on Rails and the Walter Museum API. Viewers can search by country, view and favorite particular artifacts, access profiles and add artifacts to their favorites.
                   </p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/Pre-Columbus-Finder" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/Pre-Columbus-Finder" target="_blank" data-value="preColumbusGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://flashy.netlify.com/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://flashy.netlify.com/" target="_blank" data-value="flashy">
                   <img class="img-responsive project-image" src="assets/images/Flashy.png" alt="Flashy" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://flashy.netlify.com/" target="_blank">Flashy - Responsive Flash Card Web App </a></h3>
+                  <h3 class="title"><a href="https://flashy.netlify.com/" target="_blank" class="actionEl" data-value="flashy">Flashy - Responsive Flash Card Web App </a></h3>
                   <p> Flash card app built primarily for mobile. Utilizes easytimer.js for countdown features and bootstrap for styling. HTML, CSS (Bootstrap), EasyTimer, jQuery, Toastr.
                   </p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/flashy" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/flashy" target="_blank" data-value="flashyGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
               <div class="item row">
-                <a class="col-md-4 col-sm-4 col-xs-12" href="https://quisqueyasweets.herokuapp.com/" target="_blank">
+                <a class="col-md-4 col-sm-4 col-xs-12 actionEl" href="https://quisqueyasweets.herokuapp.com/" target="_blank" data-value="quisqueyaSweets">
                   <img class="img-responsive project-image" src="assets/images/quisqueyasweetsintro.png" alt="Quisqueya Sweets" />
                 </a>
                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                  <h3 class="title"><a href="https://quisqueyasweets.herokuapp.com/" target="_blank">Quisqueya Sweets - Responsive Bakery Built with Sinatra</a></h3>
+                  <h3 class="title"><a href="https://quisqueyasweets.herokuapp.com/" target="_blank" class="actionEl" data-value="quisqueyaSweets">Quisqueya Sweets - Responsive Bakery Built with Sinatra</a></h3>
                   <p> A full-stack bakery website developed with Sinatra and Ruby, some JavaScript and Bootstrap CSS on the front end. Menu options consist of cookies, muffins and cakes with various price points. The about page mentions hours of
                     operations
                     for clients.
                   </p>
-                  <a class="btn btn-cta-secondary" href="https://github.com/CDAracena/QuisqueyaSweets" target="_blank"><i class="fa fa-github"></i> View Code on GitHub</a>
+                  <a class="btn btn-cta-secondary actionEl" href="https://github.com/CDAracena/QuisqueyaSweets" target="_blank" data-value="quisqueyaSweetsGithub"><i class="fa fa-github"></i> View Code on GitHub</a>
                 </div>
                 <!--//desc-->
               </div>
@@ -229,7 +229,7 @@
             <div class="content">
               <div class="item">
                   <div class="item">
-                      <h3 class="title"> Web Developer - <span class="place"><a href="http://www.rowantechsolutions.com/">Rowan Technology</a></span> <span class="year">(Oct 2018 - March 2019 )</span></h3>
+                      <h3 class="title"> Web Developer - <span class="place"><a href="http://www.rowantechsolutions.com/" class="actionEl" data-value="rowan">Rowan Technology</a></span> <span class="year">(Oct 2018 - March 2019 )</span></h3>
                       <p>
                         <ul>
                           <li>Create dynamic, styled and functional React components for the user interface</li>
@@ -243,7 +243,7 @@
                         </ul>
                       </p>
                     </div>
-                <h3 class="title">Youth Programming Teaching Assistant - <span class="place"><a href="https://www.generationcode.com/">Generation Code</a></span> <span class="year">(Sep 2018 - November 2018 )</span></h3>
+                <h3 class="title">Youth Programming Teaching Assistant - <span class="place"><a href="https://www.generationcode.com/" class="actionEl" data-value="generationCode">Generation Code</a></span> <span class="year">(Sep 2018 - November 2018 )</span></h3>
                 <p>
                   <ul>
                     <li>Co-facilitate web development class with lead instructor. </li>
@@ -254,60 +254,12 @@
                   </ul>
                 </p>
               </div>
-              <div class="item">
-                <h3 class="title">Operation Specialist - <span class="place"><a href="https://www.accessbazaar.com/">Access Bazaar</a></span> <span class="year">(2016 - 2017)</span></h3>
-                <p>
-                  <ul>
-                    <li>Developed and managed critical marketplace infrastructure projects and listed over 5,000 SKUs on the Bazaar Marketplace.</li>
-                    <li>Analyzed user data to optimize product description conventions.</li>
-                    <li>Worked with partner API tools to provide Bazaar customers with
-                      current product availability.</li>
-                    <li>Provide marketplace product support for internal stakeholders.</li>
-                    <li>Monitored client issues and resolved it effectively.</li>
-                    <li>Supervised accuracy in maintenance records.</li>
-                    <li>Ensured implementation of operations management systems.</li>
-                  </ul>
-                </p>
-              </div>
-              <!--//item-->
-              <div class="item">
-                <h3 class="title">Front Desk Associate - <span class="place"><a href="https://skinspanewyork.com/">Skin Spa New York</a></span> <span class="year">(2015 - 2016)</span></h3>
-                <p>
-                  <ul>
-                    <li>Processed and handled client payments, book scheduled future appointments.</li>
-                    <li>Utilized the Booker software and help train new employees on the software.</li>
-                    <li>Sustained a steady flow of more than $2,200 revenue daily.</li>
-                    <li>Counted
-                      inventory/stock and provide
-                      maintenance during down-time.</li>
-                    <li>Scheduled appointments and updated appointment calendars.</li>
-                    <li>Filed and maintained records.</li>
-                    <li>Made reservations in the most courteous and efficient manner.</li>
-                    <li>Answered all incoming calls and emails
-                      determining
-                      necessities.</li>
-                  </ul>
-                </p>
-              </div>
+
               <!--//item-->
 
-              <div class="item">
-                <h3 class="title">Research Analyst - <span class="place"><a href="#">Tryax Realty Management</a></span> <span class="year">(2014 - 2015)</span></h3>
-                <p>
-                  <ul>
-                    <li>Computed, recorded, and proofread data, records and reports.</li>
-                    <li>Researched and properly documented cases that could have negatively been impacted.</li>
-                    <li>Set-up over 20 DVR's on individual locations.</li>
-                    <li>Extracted data from videos and
-                      produce export clips.</li>
-                    <li>Set-up
-                      emails and work phone accounts for co-workers.</li>
-                    <li>Wrote analysis of current and potential clients.</li>
-                    <li>Assisted with monthly reports.</li>
-                    <li>Evaluated and recommended new products and services.</li>
-                  </ul>
-                </p>
-              </div>
+              <!--//item-->
+
+
               <!--//item-->
 
             </div>
@@ -327,8 +279,8 @@
             <div class="content">
               <ul class="list-unstyled">
                 <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>New York, NY, US</li>
-                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:cdaracena@gmail.com">CDAracena@gmail.com</a></li>
-                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://cdaracena.com">My Portfolio</a></li>
+                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:cdaracena@gmail.com" class="actionEl" data-value="contactEmail">CDAracena@gmail.com</a></li>
+                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://cdaracena.com" class="actionEl" data-value="myPortfolio">My Portfolio</a></li>
               </ul>
             </div>
             <!--//content-->

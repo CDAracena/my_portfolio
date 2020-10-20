@@ -1,15 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
   /*======= Skillset *=======*/
 
   $(".level-bar-inner").css("width", "0");
 
-  $(window).on("load", function() {
-    $(".level-bar-inner").each(function() {
+  $(window).on("load", function () {
+    $(".level-bar-inner").each(function () {
       var itemWidth = $(this).data("level");
 
       $(this).animate(
         {
-          width: itemWidth
+          width: itemWidth,
         },
         800
       );
@@ -22,7 +22,12 @@ $(document).ready(function() {
   /* jQuery RSS - https://github.com/sdepold/jquery-rss */
 
   function logGAEvent() {
-    window.dataLayer.push({ linkPressed: this.dataset.value });
+    ga("send", {
+      hitType: "event",
+      eventCategory: "linkPress",
+      eventAction: "click",
+      eventLabel: this.dataset.value,
+    });
   }
 
   const eventElements = document.querySelectorAll(".actionEl");
@@ -31,9 +36,14 @@ $(document).ready(function() {
     eventElements[i].addEventListener("click", logGAEvent);
   }
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
-      window.dataLayer.push({ scrolledToBottom: true });
+      ga("send", {
+        hitType: "event",
+        eventCategory: "scrollToBottom",
+        eventAction: "scroll",
+        eventLabel: "true",
+      });
     }
   });
 });
